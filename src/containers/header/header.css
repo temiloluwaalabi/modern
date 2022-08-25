@@ -1,0 +1,235 @@
+.modern__header {
+    display: flex;
+}
+
+.modern__header-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+    width: 49% !important;
+
+}
+
+.modern__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: -0.04rem;
+}
+
+.modern__header-content p {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    color: #81AFDD;
+    font-family: var(--color-text);
+    margin-top: 1.5rem;
+}
+
+.modern__header-content__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+}
+
+.modern__header-content__input input {
+    background-color: var(--color-footer);
+    font-family: var(--font-family);
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 27px;
+    color: #fff;
+    outline: none;
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.modern__header-content__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    background-color: #ff4820;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 27px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+}
+
+.modern__header-content__people {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.modern__header-content__people img {
+    width: 181.79px;
+    height: 38px;
+}
+
+.modern__header-content__people p {
+    margin: 0 0 0 1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 38px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.modern__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modern__header-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .modern__header {
+        flex-direction: column;
+    }
+
+    .modern__header-content {
+        width: 100% !important;
+        margin: 0 0 3rem;
+        flex: 1;
+    }
+
+    .modern__header-content h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .modern__header-content p {
+        font-size: 19px;
+    }
+
+    .modern__header-content__input button,
+    .modern__header-content__input input {
+        font-size: 15px;
+    }
+
+    .modern__header-content__people p {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .modern__header-image {
+        align-items: flex-start;
+    }
+
+    .modern__header-image img {
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .modern__header {
+        flex-direction: column;
+    }
+
+    .modern__header-content {
+        width: 100% !important;
+
+    }
+
+    .modern__header h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .modern__header p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .modern__header-content__people {
+        flex-direction: column;
+    }
+
+    .modern__header-content__people p {
+        margin: 0;
+    }
+
+    .modern__header-content__input input,
+    .modern__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .modern__header {
+        flex-direction: column;
+    }
+
+    .modern__header h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .modern__header p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .modern__header-content__input input,
+    .modern__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .modern__header-content__people p {
+        text-align: center;
+    }
+
+
+    @media screen and (max-width: 280px) {
+        .modern__header h1 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .modern__header p {
+            font-size: 13px;
+            line-height: 22px;
+        }
+
+        .modern__header-content__input input,
+        .modern__header-content__input button {
+            font-size: 11px;
+            line-height: 13px;
+        }
+
+        .modern__header-content__people p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 4px;
+        }
+    }
+}
